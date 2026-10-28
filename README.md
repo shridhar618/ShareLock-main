@@ -94,7 +94,7 @@ src/
 scripts/                 run-api.mjs · dev-all.mjs · render-landing-assets.py
 ```
 
-**Technology:** React 19, Vite 8, plain CSS design system (Inter + IBM Plex Mono), FastAPI, Pydantic 2, SQLite, Pillow and pytest. The frontend adds no new dependencies. Animations are CSS keyframes, with `requestAnimationFrame` only where needed, and they respect `prefers-reduced-motion`.
+**Technology:** React 19, Vite 8, plain CSS design system (Inter, Syne and IBM Plex Mono), FastAPI, Pydantic 2, SQLite, Pillow and pytest. The frontend adds no new dependencies. The landing page uses a responsive editorial layout, light and dark themes, restrained reveal and scroll-parallax effects, and honors `prefers-reduced-motion`.
 
 ---
 
@@ -146,7 +146,9 @@ After installation, the whole core workflow runs with **no network access**: ext
 
 ### Landing page
 
-The landing page at `/` presents the product with a short, skippable intro, and its demos are real:
+The landing page at `/` presents Revelio with an editorial, high-contrast visual style. Its display typography uses Syne, with Inter for interface text and IBM Plex Mono for technical labels. Dark mode uses near-black surfaces, warm ivory text and coral accents; light mode uses warm cream surfaces and green accents. The hero accent circle moves beyond the composition as the visitor scrolls, with a subtle background parallax effect. Motion respects `prefers-reduced-motion`.
+
+The landing page demos are real:
 
 - **Live demo:** a visitor types a fictional description, and the page calls the local engine to extract traits and render a procedural composite. Visitors can change traits and sliders, regenerate, and download the PNG.
 - **Editor showcase:** a second live renderer instance with real sliders, in-page demo revisions and a before/after slider.
