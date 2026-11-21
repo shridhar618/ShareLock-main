@@ -2,6 +2,8 @@
 
 # Revelio + WitnessTrace AI
 
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=white)
+
 The default application combines Revelio's React interface with WitnessTrace's FastAPI/SQLite backend and existing authenticated Codex CLI generation pipeline. It includes the 45-attribute Character Lab, immutable testimony/revisions, refinement, comparison, Digital Sketchpad, enhancement, reviewed 2D multi-view, case library and persisted PDF/JSON/PNG exports.
 
 ```bash
